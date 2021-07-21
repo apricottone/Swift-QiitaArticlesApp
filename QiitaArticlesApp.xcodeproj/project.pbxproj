@@ -13,6 +13,8 @@
 		6C867AA326A83D3600609D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C867AA126A83D3600609D67 /* Main.storyboard */; };
 		6C867AA526A83D3700609D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C867AA426A83D3700609D67 /* Assets.xcassets */; };
 		6C867AA826A83D3700609D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C867AA626A83D3700609D67 /* LaunchScreen.storyboard */; };
+		6C867AB226A8400D00609D67 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C867AB126A8400D00609D67 /* PopUpViewController.swift */; };
+		6C867AB526A840E000609D67 /* SearchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C867AB426A840E000609D67 /* SearchedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6C867AA426A83D3700609D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C867AA726A83D3700609D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C867AA926A83D3700609D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C867AB126A8400D00609D67 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		6C867AB426A840E000609D67 /* SearchedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				6C867AA426A83D3700609D67 /* Assets.xcassets */,
 				6C867AA626A83D3700609D67 /* LaunchScreen.storyboard */,
 				6C867AA926A83D3700609D67 /* Info.plist */,
+				6C867AB126A8400D00609D67 /* PopUpViewController.swift */,
+				6C867AB426A840E000609D67 /* SearchedViewController.swift */,
 			);
 			path = QiitaArticlesApp;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C867AA026A83D3600609D67 /* ViewController.swift in Sources */,
+				6C867AB526A840E000609D67 /* SearchedViewController.swift in Sources */,
 				6C867A9C26A83D3600609D67 /* AppDelegate.swift in Sources */,
 				6C867A9E26A83D3600609D67 /* SceneDelegate.swift in Sources */,
+				6C867AB226A8400D00609D67 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

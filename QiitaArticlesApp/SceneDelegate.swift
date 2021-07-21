@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  QiitaArticlesApp
 //
-//  Created by 水梨弘翔 on 2021/07/21.
+//  Created by mizoz on 2021/07/21.
 //
 
 import UIKit
