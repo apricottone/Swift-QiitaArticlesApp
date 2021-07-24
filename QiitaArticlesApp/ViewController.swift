@@ -93,7 +93,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    //      UITableView
+    //      UITableViewCell
     func tableView(_ tableView: UITableView, heightForRowAt IndexPath: IndexPath) -> CGFloat {
         return 80
     }
