@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import PKHUD
 
 class PopUpViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var PopUpView: UIView!
@@ -49,7 +48,6 @@ class PopUpViewController: UIViewController, UISearchBarDelegate {
         let searchedViewController = self.storyboard?.instantiateViewController(withIdentifier: "Searched") as! SearchedViewController
         searchedViewController.inputtedText = searchField.text!
         self.navigationController?.pushViewController(searchedViewController, animated: true)
-        HUD.flash(.progress, delay: 3.0)
     }
     
     //      Close a search popup

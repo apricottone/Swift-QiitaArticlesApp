@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class SearchedViewController: UIViewController {
     var inputtedText = ""
@@ -30,6 +31,7 @@ class SearchedViewController: UIViewController {
     
     //      Access API (Regarding "inputtedText")
     private func getQiitaAPI() {
+        HUD.flash(.progress, delay: 1.0)    //  Loading Animation
         //      Get JSON
         guard let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=10&query=\(inputtedText)") else { return }
         var request = URLRequest(url: url)
@@ -38,6 +40,7 @@ class SearchedViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print("情報の取得に失敗：", error)
+                HUD.hide()
                 return
             }
             if let data = data {
@@ -47,10 +50,12 @@ class SearchedViewController: UIViewController {
                     self.qiitas = qiita
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
+                        HUD.hide()
                     }
                     print("json: ", qiita)
                 } catch(let error) {
                     print("情報の取得に失敗：", error)
+                    HUD.hide()
                 }
             }
         }
@@ -70,7 +75,6 @@ extension SearchedViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! QiitaTableViewCell
         //        cell.backgroundColor = .systemPink
         cell.qiita = qiitas[indexPath.row]
-        
         return cell
     }
 }
