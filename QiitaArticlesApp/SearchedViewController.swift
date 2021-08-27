@@ -31,9 +31,9 @@ class SearchedViewController: UIViewController {
     
     //      Access API (Regarding "inputtedText")
     private func getQiitaAPI() {
-        HUD.flash(.progress, delay: 1.0)    //  Loading Animation
+        HUD.flash(.progress, delay: 2.0)    //  Loading Animation
         //      Get JSON
-        guard let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=10&query=\(inputtedText)") else { return }
+        guard let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=20&query=\(inputtedText)") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         //      Get Contents

@@ -78,12 +78,12 @@
 				6C867A9B26A83D3600609D67 /* AppDelegate.swift */,
 				6C867A9D26A83D3600609D67 /* SceneDelegate.swift */,
 				6C867A9F26A83D3600609D67 /* ViewController.swift */,
+				6C867AB126A8400D00609D67 /* PopUpViewController.swift */,
+				6C867AB426A840E000609D67 /* SearchedViewController.swift */,
 				6C867AA426A83D3700609D67 /* Assets.xcassets */,
 				6C867AA626A83D3700609D67 /* LaunchScreen.storyboard */,
 				6C867AA926A83D3700609D67 /* Info.plist */,
-				6C867AB126A8400D00609D67 /* PopUpViewController.swift */,
 				6C867AA126A83D3600609D67 /* Main.storyboard */,
-				6C867AB426A840E000609D67 /* SearchedViewController.swift */,
 			);
 			path = QiitaArticlesApp;
 			sourceTree = "<group>";

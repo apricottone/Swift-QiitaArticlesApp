@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     //      Access API
     private func getQiitaAPI() {
         //      Get JSON
-        guard let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=10") else { return }
+        guard let url = URL(string: "https://qiita.com/api/v2/items?page=1&per_page=20") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         //      Get Contents
