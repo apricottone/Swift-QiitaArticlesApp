@@ -66,7 +66,7 @@ class SearchedViewController: UIViewController {
 extension SearchedViewController: UITableViewDelegate, UITableViewDataSource {
     //      UITableViewCell
     func tableView(_ tableView: UITableView, heightForRowAt IndexPath: IndexPath) -> CGFloat {
-        return 80
+        return 70
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return qiitas.count
