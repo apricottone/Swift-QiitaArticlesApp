@@ -83,7 +83,7 @@ class ViewController: UIViewController {
                     }
                     //                    print("json: ", json)
                     print("json: ", qiita)
-                } catch(let error) {
+                } catch let error {
                     print("情報の取得に失敗", error)
                 }
             }
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     //      UITableViewCell
     func tableView(_ tableView: UITableView, heightForRowAt IndexPath: IndexPath) -> CGFloat {
-        return 80
+        return 70
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return qiitas.count
@@ -119,7 +119,7 @@ class QiitaTableViewCell: UITableViewCell {
                 let data = try Data(contentsOf: url!)
                 let image = UIImage(data: data)
                 userImageView.image = image
-            }catch let err {
+            } catch let err {
                 print("Error : \(err.localizedDescription)")
             }
         }
